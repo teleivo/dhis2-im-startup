@@ -9,7 +9,7 @@ Query the pods you deployed (adapt namespace, selector, ...) and pipe it into th
 ```sh
 kubectl get pods -o json --namespace whoami -l app.kubernetes.io/name=core | 
     jq -r '[ .items[] | {name: .metadata.name,conditions: .status.conditions,containerStatuses: .status.containerStatuses} ]' |
-    go run main.go
+    go run cmd/kubetime/main.go
 ```
 
 You should see something like

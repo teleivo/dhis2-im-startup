@@ -1,0 +1,148 @@
+[
+  {
+    "name": "ivo-dhis2-0-core-6846594bdc-4hwhx",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:35:29Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:41:17Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:41:17Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:35:26Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://c0dcb7f79cb19c438c0501747d93e66cbd25b5d71f7bea5035f94be72e211642",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {
+          "terminated": {
+            "containerID": "docker://7f4ab82e24b27e006620fd19c6767c7a1ef56b93a725856aef68fe2761b08ce6",
+            "exitCode": 143,
+            "finishedAt": "2022-07-17T13:39:36Z",
+            "reason": "Error",
+            "startedAt": "2022-07-17T13:35:29Z"
+          }
+        },
+        "name": "core",
+        "ready": true,
+        "restartCount": 1,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-17T13:39:37Z"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "ivo-dhis2-2-core-ff9d4669b-jl4l2",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:36:05Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:39:57Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:39:57Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:36:01Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://c3845c2e6efb5e8c166dc00902a3c5a639819cf742b56e080c4579d3c6d9703c",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {},
+        "name": "core",
+        "ready": true,
+        "restartCount": 0,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-17T13:36:05Z"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "ivo-dhis2-3-core-5d75884bcc-xpvjx",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:36:27Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:40:28Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:40:28Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T13:36:23Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://fa382a2902b7ed90f4e4d7f8eb6233f0dac0d432d6a9904d2377d7667c1be361",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {},
+        "name": "core",
+        "ready": true,
+        "restartCount": 0,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-17T13:36:27Z"
+          }
+        }
+      }
+    ]
+  }
+]
