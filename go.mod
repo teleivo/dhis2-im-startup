@@ -1,5 +1,3 @@
-module github.com/teleivo/go-template
+module github.com/teleivo/startup
 
 go 1.18
-
-require github.com/google/go-cmp v0.5.8

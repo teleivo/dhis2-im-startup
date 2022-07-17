@@ -1,6 +1,4 @@
-# go-template
-
-My [Go](https://go.dev/) template repository.
+# DHIS2 Instance Manager Startup Analysis
 
 ## Usage
 
