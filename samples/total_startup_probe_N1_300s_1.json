@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ivo-dhis2-0-core-584b957949-lswrr",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T18:59:02Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T19:05:00Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T19:05:00Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-17T18:59:00Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://e52424b88d3f3492569f87dfaeafa402c4bd3831b1fea0ac1aae5b735be56176",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {
+          "terminated": {
+            "containerID": "docker://685ed27e3fdf0e880b19d2ff1c0c51b4f6f7f5fdb270d2553c4912167a622292",
+            "exitCode": 143,
+            "finishedAt": "2022-07-17T19:04:00Z",
+            "reason": "Error",
+            "startedAt": "2022-07-17T18:59:02Z"
+          }
+        },
+        "name": "core",
+        "ready": true,
+        "restartCount": 1,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-17T19:04:00Z"
+          }
+        }
+      }
+    ]
+  }
+]
