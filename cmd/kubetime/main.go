@@ -1,10 +1,12 @@
 package main
 
 import (
+	"encoding/csv"
 	"encoding/json"
 	"fmt"
 	"io"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -42,7 +44,7 @@ func main() {
 	}
 }
 
-func run(in io.Reader, _ io.Writer) error {
+func run(in io.Reader, out io.Writer) error {
 	var pods []pod
 	err := json.NewDecoder(in).Decode(&pods)
 	if err != nil {
@@ -76,9 +78,18 @@ func run(in io.Reader, _ io.Writer) error {
 		ups = append(ups, up)
 	}
 
-	for _, up := range ups {
-		fmt.Printf("%q: %v (ready) - %v (init) = %v (duration) [%d (restarts)]\n", up.Pod, up.Ready, up.Init, up.Duration, up.Restarts)
+	enc := csv.NewWriter(out)
+	err = enc.Write([]string{"Pod", "Ready", "Init", "Duration", "Restarts"})
+	if err != nil {
+		return err
 	}
+	for _, up := range ups {
+		err = enc.Write([]string{up.Pod, up.Ready.String(), up.Init.String(), up.Duration.String(), strconv.Itoa(up.Restarts)})
+		if err != nil {
+			return err
+		}
+	}
+	enc.Flush()
 
 	return nil
 }
