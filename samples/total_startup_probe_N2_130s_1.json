@@ -1,0 +1,110 @@
+[
+  {
+    "name": "ivo-dhis2-0-core-6469c899cf-qcp9v",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:40:36Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:45:08Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:45:08Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:40:33Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://9811768b7cf5f07badae34d4ef681243ec7f41d84dd5f67794a1de4a3eaf6531",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {
+          "terminated": {
+            "containerID": "docker://4d42fe0064f0b3a052f34611c1f63a6d8065255946032abbb506ccc75ef86a9b",
+            "exitCode": 143,
+            "finishedAt": "2022-07-19T03:43:09Z",
+            "reason": "Error",
+            "startedAt": "2022-07-19T03:40:57Z"
+          }
+        },
+        "name": "core",
+        "ready": true,
+        "restartCount": 1,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-19T03:43:09Z"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "ivo-dhis2-1-core-5db79d9c7c-mkxhl",
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:41:00Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:45:10Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:45:10Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2022-07-19T03:40:55Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "docker://68fe142fc819a81c1fbcd069ae04d5bdd215c7d304eaadf4508939e746c7cae4",
+        "image": "dhis2/core:2.36.0-tomcat-8.5.34-jre8-alpine",
+        "imageID": "docker-pullable://dhis2/core@sha256:476535a10259dc1ea83ba803e133a028c7277d5c6706cdcb7147a6fc39ac9aa5",
+        "lastState": {
+          "terminated": {
+            "containerID": "docker://f9e13bf8bcaf07d4c31961b46ce9288bb3c143443b1a622aba97e661ff1802a7",
+            "exitCode": 143,
+            "finishedAt": "2022-07-19T03:43:11Z",
+            "reason": "Error",
+            "startedAt": "2022-07-19T03:41:00Z"
+          }
+        },
+        "name": "core",
+        "ready": true,
+        "restartCount": 1,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2022-07-19T03:43:12Z"
+          }
+        }
+      }
+    ]
+  }
+]
